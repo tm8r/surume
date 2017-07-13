@@ -8,6 +8,11 @@ _DEFAULT_SHADING_ENGINES = ["initialParticleSE", "initialShadingGroup"]
 
 
 def get_unused_utility_nodes():
+    u"""未使用のユーティリティノードのリストを返す
+
+    :return: 未使用のユーティリティノードのリスト
+    :rtype: list of unicode
+    """
     utility_node_types = cmds.listNodeTypes("utility")
     utility_nodes = []
     for ul in utility_node_types:
@@ -24,6 +29,11 @@ def get_unused_utility_nodes():
 
 
 def get_unused_shading_engines():
+    u"""未使用のShadingEngineのリストを返す
+
+    :return: 未使用のShadingEngineのリスト
+    :rtype: list of unicode
+    """
     shading_engines = cmds.ls(type="shadingEngine")
 
     unused_shading_engines = []
