@@ -1,5 +1,5 @@
 # mayatools
-オレオレmayaプラグインモジュールです:simple_smile:
+オレオレmayaプラグインモジュールです。
 
 # 利用方法
 以下の場所にリポジトリ直下のmayatools.modを配置してください。  
