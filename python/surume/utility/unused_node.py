@@ -49,3 +49,42 @@ def get_unused_shading_engines():
         if unused:
             unused_shading_engines.append(s)
     return unused_shading_engines
+
+
+import pymel.core as pm
+
+import time
+
+
+def get_vertexes():
+    sl = cmds.ls(sl=True)
+    for s in sl:
+        uvs = cmds.polyListComponentConversion(s, tuv=True)
+        if not uvs:
+            continue
+        res = cmds.ls(uvs, fl=True)
+        # print(res)
+
+
+def get_vertexes_pymel():
+    sl = pm.ls(sl=True)
+    for s in sl:
+        uvs = s.map
+        if not uvs:
+            continue
+        res = [x.name() for x in pm.ls(uvs, fl=True)]
+        # print(res)
+
+
+count = 100000
+start = time.time()
+for i in xrange(0, count):
+    get_vertexes()
+end = time.time()
+print("cmd", end - start)
+
+start = time.time()
+for i in xrange(0, count):
+    get_vertexes_pymel()
+end = time.time()
+print("pym", end - start)

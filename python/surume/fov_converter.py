@@ -3,13 +3,13 @@ from __future__ import absolute_import, division, print_function
 
 import math
 
-from mayatools.utility.ui_utility import safe_delete_window
+from surume.utility.ui_utility import safe_delete_window
 
 import maya.cmds as cmds
 
 
 class FovConverter(object):
-    _WINDOW_NAME = "mayatools_fov_converter_window"
+    _WINDOW_NAME = "surume_fov_converter_window"
     _MARGIN = 8
 
     def __init__(self):

@@ -2,14 +2,14 @@
 u"""カラーコードからMayaのUI用の色情報形式に変換する"""
 from __future__ import absolute_import, division, print_function
 
-from mayatools.utility.ui_utility import safe_delete_window
+from surume.utility.ui_utility import safe_delete_window
 
 from maya import cmds
 
 
 class ConvertColorCode(object):
     u"""カラーコードからMayaのUI用の色情報形式に変換する"""
-    _WINDOW_NAME = "mayatools_utility_convert_color_code_window"
+    _WINDOW_NAME = "surume_utility_convert_color_code_window"
     _COLOR_FORMAT = "[{0}, {1}, {2}]"
 
     def __init__(self):

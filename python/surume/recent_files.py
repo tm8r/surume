@@ -12,7 +12,7 @@ import maya.mel as mel
 class RecentFileWindow(object):
     u"""最近開いたファイルへのアクセス補助クラス"""
 
-    _WINDOW_NAME = "mayatools_OpenRecentFiles"
+    _WINDOW_NAME = "surume_OpenRecentFiles"
     _WINDOW_TITLE = "OpenRecentFiles"
 
     @staticmethod

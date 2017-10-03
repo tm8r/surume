@@ -3,6 +3,6 @@ from __future__ import absolute_import, division, print_function
 
 import maya.utils
 
-from mayatools.startup import initialize_plugin
+from surume.startup import initialize_plugin
 
 maya.utils.executeDeferred(initialize_plugin)

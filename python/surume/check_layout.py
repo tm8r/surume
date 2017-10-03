@@ -42,7 +42,7 @@ class CheckLayoutWindow(object):
     u"""レイアウトチェックウィンドウ"""
 
     _WINDOW_TITLE = "CheckLayout"
-    _WINDOW_NAME = "mayatools_check_layout_window"
+    _WINDOW_NAME = "surume_check_layout_window"
     _EXCLUDE_WINDOWS = ["scriptEditorPanel", "MayaWindow", "nexFloatWindow", "outlinerPanel", "graphEditor",
                         "clipEditorPanel", "namespaceEditor", "hyperGraphPanel", "connectWindow"]
     _MARGIN = 8
